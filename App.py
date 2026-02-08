@@ -18,8 +18,9 @@ st.dataframe(df)
 # Data save karne ke liye (Sample button)
 if st.button("Data Update Karein"): 
   
-conn.update(spreadsheet=url, data=df) 
+    conn.update(spreadsheet=url, data=df) 
 st.success("Data safalta purvak save ho gaya!")
+
 
 
 
