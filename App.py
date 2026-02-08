@@ -12,9 +12,11 @@ url = ""
 df = conn.read(spreadsheet=url)
 
 #Screen par dikhane ke liye
-st.title("FCI Online Data") st.dataframe(df)
+st.title("FCI Online Data") 
+st.dataframe(df)
 
 # Data save karne ke liye (Sample button)
 if st.button("Data Update Karein"): conn.update(spreadsheet=url, data=df) st.success("Data safalta purvak save ho gaya!")
+
 
 
